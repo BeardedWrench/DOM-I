@@ -59,7 +59,7 @@ links.forEach( link => link.style.color = 'green' );
 imgs[1].src = siteContent[ 'cta' ][ 'img-src' ];
 imgs[2].src = siteContent[ 'main-content' ][ 'middle-img-src' ];
 
-h1Tag.innerHTML = 'DOM<br> Is<br> Awesome';
+h1Tag.innerHTML = siteContent[ 'cta' ][ 'h1' ];
 btn.textContent = siteContent[ 'cta' ][ 'button' ];
 
 h4s[0].textContent = siteContent[ 'main-content' ][ 'features-h4' ];
