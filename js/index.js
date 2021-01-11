@@ -84,7 +84,7 @@ paraGraphs[6].textContent = siteContent[ 'contact' ][ 'phone' ];
 paraGraphs[7].textContent = siteContent[ 'contact' ][ 'email' ];
 
 paraGraphs[8].textContent = siteContent[ 'footer' ][ 'copyright' ];
-/*
+
 const blogLink = document.createElement( 'a' );
 blogLink.textContent = 'Blog';
 blogLink.href = '#';
@@ -96,4 +96,3 @@ learnLink.textContent = 'Learn';
 learnLink.href = '#';
 learnLink.style.color = 'green';
 navigation.appendChild( learnLink );
-*/
