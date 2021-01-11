@@ -49,12 +49,10 @@ const btn = document.querySelector( 'button' );
 const h4s = document.querySelectorAll( 'h4' );
 const paraGraphs = document.querySelectorAll( 'p' );
 
-links[0].textContent = 'Services';
-links[1].textContent = 'Product';
-links[2].textContent = 'Vision';
-links[3].textContent = 'Features';
-links[4].textContent = 'About';
-links[5].textContent = 'Contact';
+const vals = Object.values(siteContent['nav']);
+for (let i = 0; i < vals.length - 1; i++) {
+    links[i].textContent = vals[i];
+}
 
 links.forEach( link => link.style.color = 'green' );
 
@@ -86,7 +84,7 @@ paraGraphs[6].textContent = siteContent[ 'contact' ][ 'phone' ];
 paraGraphs[7].textContent = siteContent[ 'contact' ][ 'email' ];
 
 paraGraphs[8].textContent = siteContent[ 'footer' ][ 'copyright' ];
-
+/*
 const blogLink = document.createElement( 'a' );
 blogLink.textContent = 'Blog';
 blogLink.href = '#';
@@ -98,3 +96,4 @@ learnLink.textContent = 'Learn';
 learnLink.href = '#';
 learnLink.style.color = 'green';
 navigation.appendChild( learnLink );
+*/
